@@ -346,10 +346,10 @@ a.right.carousel-control {
   width: 5%;
 }
 a.left.carousel-control {
-  left: -30px;
+  left: -20px;
 }
 a.right.carousel-control {
-  right: -30px;
+  right: -20px;
 }
 /*----------------------------------------------------------------------------*/
 
@@ -422,6 +422,53 @@ a.left.carousel-control.min {
 a.right.carousel-control.min {
   right: 100px;
 }
+#carousel-example-generic a.left.carousel-control.max {
+  left: 30px;
+}
+#carousel-example-generic a.right.carousel-control.max {
+  right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .icon-prev {
+    left: 30px;
+  }
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-next {
+    right: 30px;
+  }
+  nav a.logo {
+  font-size: 28px;
+}
+  nav li {
+  font-size: 12px;
+}
+  .searchbox-input{
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+    background:#dcddd8;
+    width:90%;
+    height:30px;
+    margin:0;
+    padding:0px 10px 0px 10px;
+    font-size:14px;
+}
+}
+
+    
+
 .border {
   border: 10px solid #eee;
   padding: 10px;
@@ -491,18 +538,21 @@ a.right.carousel-control.min {
   color: #f69b0d;
 }
 .insta-foto {
-  width: 84px;
-  height: 84px;
+  width: 75px;
+  height: 75px;
   margin: 5px 1px;
   background: #ccc;
 }
+  .instagram {
+    padding: 0;
+  }
 .footer-middle {
   min-height: 140px;
   padding-top: 30px;
 }
 p.h2 {
   font-family: Montserrat, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -529,8 +579,9 @@ p.h2 {
 .social button {
   border: none;
   color: #ccc;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 5px;
+  padding: 6px;
 }
 .social button:hover {
   color: #f69b0d;
