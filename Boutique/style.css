@@ -86,8 +86,16 @@ span.no-border:first-child::after {
   content: ' | ';
   padding-left: 10px;
 }
+.users {
+  padding: 0;
+}
 .user-area {
   padding-top: 6px;
+}
+.user-area li {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
 }
 nav.menu {
   background: #fff;
@@ -108,6 +116,9 @@ hr {
 }
 /*Searchbox
 -----------------------------------------------------------------------------*/
+.search {
+  width: 150px;
+}
 .searchbox{
     position:relative;
     min-width:50px;
@@ -115,6 +126,7 @@ hr {
     height:50px;
     float:right;
     overflow:hidden;
+  padding-top: 6px;
     
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
@@ -123,17 +135,17 @@ hr {
     transition: width 0.3s;
 }
 .searchbox-input{
-    top:0;
-    right:0;
-    border:0;
-    outline:0;
-    background:#dcddd8;
-    width:100%;
-    height:50px;
-    margin:0;
-    padding:0px 55px 0px 20px;
-    font-size:20px;
-    color:red;
+    top: 50px;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background: #dcddd8;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0px 55px 0px 20px;
+    font-size: 14px;
+    color: #f69b0d;
 }
 .searchbox-input::-webkit-input-placeholder {
     color: #f69b0d;
@@ -154,8 +166,8 @@ hr {
     display:block;
     position:absolute;
     top:0;
-    font-family:verdana;
-    font-size:22px;
+    font-family:Roboto, Arial, sans-serif;
+    font-size:16px;
     right:0;
     padding:0;
     margin:0;
@@ -170,8 +182,13 @@ hr {
 .searchbox-open{
     width:100%;
 }
-
-
+.control {
+  position: relative;
+  top: 50%;
+}
+.carousel-control:hover {
+  color: #f69b0d;
+}
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -202,6 +219,7 @@ hr {
   content: "";
   background: url(img/separator.png) no-repeat center;
 }
+
 #carousel-item-generic {
   margin-top: 55px;
 }
@@ -247,7 +265,7 @@ hr {
   content: "Sale";
   position: absolute;
   top: 15px;
-  right: 50px;
+  right: 0px;
   padding: 8px 12px;
   color: #fff;
   background: #f69b0d;
@@ -259,7 +277,7 @@ hr {
   content: "New";
   position: absolute;
   top: 55px;
-  right: 50px;
+  right: 0px;
   padding: 8px 12px;
   color: #fff;
   background: #57DD43;
@@ -278,7 +296,7 @@ hr {
 .rating {
   display: inline-block;
   color: #f69b0d;
-  padding: 20px;
+  padding: 5px;
 }
 .desc {
   display: inline-block;
