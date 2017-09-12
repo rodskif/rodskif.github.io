@@ -86,16 +86,8 @@ span.no-border:first-child::after {
   content: ' | ';
   padding-left: 10px;
 }
-.users {
-  padding: 0;
-}
 .user-area {
   padding-top: 6px;
-}
-.user-area li {
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
 }
 nav.menu {
   background: #fff;
@@ -116,9 +108,6 @@ hr {
 }
 /*Searchbox
 -----------------------------------------------------------------------------*/
-.search {
-  width: 150px;
-}
 .searchbox{
     position:relative;
     min-width:50px;
@@ -126,7 +115,6 @@ hr {
     height:50px;
     float:right;
     overflow:hidden;
-  padding-top: 6px;
     
     -webkit-transition: width 0.3s;
     -moz-transition: width 0.3s;
@@ -135,17 +123,17 @@ hr {
     transition: width 0.3s;
 }
 .searchbox-input{
-    top: 50px;
-    right: 0;
-    border: 0;
-    outline: 0;
-    background: #dcddd8;
-    width: 100%;
-    height: 50px;
-    margin: 0;
-    padding: 0px 55px 0px 20px;
-    font-size: 14px;
-    color: #f69b0d;
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+    background:#dcddd8;
+    width:100%;
+    height:50px;
+    margin:0;
+    padding:0px 55px 0px 20px;
+    font-size:20px;
+    color:red;
 }
 .searchbox-input::-webkit-input-placeholder {
     color: #f69b0d;
@@ -166,8 +154,8 @@ hr {
     display:block;
     position:absolute;
     top:0;
-    font-family:Roboto, Arial, sans-serif;
-    font-size:16px;
+    font-family:verdana;
+    font-size:22px;
     right:0;
     padding:0;
     margin:0;
@@ -182,13 +170,8 @@ hr {
 .searchbox-open{
     width:100%;
 }
-.control {
-  position: relative;
-  top: 50%;
-}
-.carousel-control:hover {
-  color: #f69b0d;
-}
+
+
 
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -219,7 +202,6 @@ hr {
   content: "";
   background: url(img/separator.png) no-repeat center;
 }
-
 #carousel-item-generic {
   margin-top: 55px;
 }
@@ -265,7 +247,7 @@ hr {
   content: "Sale";
   position: absolute;
   top: 15px;
-  right: 0px;
+  right: 50px;
   padding: 8px 12px;
   color: #fff;
   background: #f69b0d;
@@ -277,7 +259,7 @@ hr {
   content: "New";
   position: absolute;
   top: 55px;
-  right: 0px;
+  right: 50px;
   padding: 8px 12px;
   color: #fff;
   background: #57DD43;
@@ -296,7 +278,7 @@ hr {
 .rating {
   display: inline-block;
   color: #f69b0d;
-  padding: 5px;
+  padding: 20px;
 }
 .desc {
   display: inline-block;
@@ -613,4 +595,40 @@ p.h2 {
 }
 .payment {
   padding-top: 30px;
+}
+
+/*================================================Product page=========================================*/
+
+.breadcrumb {
+  background: #fff;
+  text-transform: none;
+}
+.nomination {
+  position: relative;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.nomination::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  border: 2px solid #f69b0d;
+}
+.description {
+  margin-top: 50px;
+  margin-bottom: 45px;
+  color: #888;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: none;
+}
+.range {
+  
 }
