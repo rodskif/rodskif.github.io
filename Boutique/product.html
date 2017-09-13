@@ -29,7 +29,7 @@
 
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active-link"><a href="#">home</a></li>
+          <li class="active-link"><a href="index.html">home</a></li>
           <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <strong class="caret"></strong></a>
               <ul class="dropdown-menu">
@@ -67,31 +67,206 @@
       <li class="active">Men</li>
     </ol>
     <div class="row">
-      <div class="col-sm-6">
-        <img src="http://via.placeholder.com/570x780?text=Here will be your product" alt="">
-        <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <img class="img-responsive" src="http://via.placeholder.com/570x780?text=Here will be your product" alt="">
+        <div class="row thumbnails">
           <div class="col-sm-3">
-            <img src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            <a href="#">
+              <img class="img-responsive img-thumbnail thumb" src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            </a>
           </div>
           <div class="col-sm-3">
-            <img src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            <a href="#">
+              <img class="img-responsive img-thumbnail thumb" src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            </a>
           </div>
           <div class="col-sm-3">
-            <img src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            <a href="#">
+              <img class="img-responsive img-thumbnail thumb" src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            </a>
           </div>
           <div class="col-sm-3">
-            <img src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            <a href="#">
+              <img class="img-responsive img-thumbnail thumb" src="http://via.placeholder.com/130x175?text=Another view of your product" alt="">
+            </a>
           </div>
         </div>
       </div>
       
-      <div class="col-sm-6">
+      <div class="col-md-6 col-sm-6 col-xs-12">
         <h3 class="nomination">Bouble fabric blazer</h3>
         <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique alias obcaecati a labore laboriosam ullam maxime, molestias quas voluptas neque ut, omnis blanditiis nostrum eligendi! Blanditiis velit pariatur distinctio ratione obcaecati, voluptas quae asperiores numquam et adipisci quis reprehenderit at a veritatis maxime. Facere at reiciendis corporis vitae eligendi, nesciunt.</p>
-        <div class="range"></div>
+        <div class="range">
+          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> <span>3 Reating(s) | </span><a href="#">Add Your Reating(s)</a>
+        </div>
+        <div class="big-price">
+          $69.90
+        </div>
+        <hr>
+        <div class="options">
+          <h3 class="nomination">Options</h3>
+          <form>
+            <div class="form-group">
+              <label for="size">Size<sup>*</sup></label>
+              <select class="form-control" id="size" required>
+                <option>- Please select -</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="color">Color<sup>*</sup></label>
+              <select class="form-control" id="color" required>
+                <option>- Please select -</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p class="form-control-static text-danger">Required Fields<sup>*</sup></p>
+            </div>
+            <div class="form-group clearfix">
+              <label for="quanty" class="col-sm-2 quanty">Quanty:</label>
+<!--              <div class="col-sm-2">-->
+                <input type="number" id="quanty" class="col-sm-2" value="1">
+<!--              </div>-->
+              <div class="col-sm-offset-6 col-sm-2 cost">
+                $69.90
+              </div>
+            </div>
+            <div class="btn-group event">
+              <button class="btn btn-default to-cart" type="submit"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+              <button class="btn btn-default to-cart" type="submit"><i class="fa fa-heart" aria-hidden="true"></i></button>
+              <button class="btn btn-default to-cart" type="submit"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+            </div>
+          </form>
+          <div class="social-button">
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    
+    <div class="tab">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation" class="stroke active"><a class="tabs" href="#desc" aria-controls="desc" role="tab" data-toggle="tab">Description</a></li>
+        <li role="presentation" class="stroke"><a class="tabs" href="#review" aria-controls="review" role="tab" data-toggle="tab">Customer review</a></li>
+        <li role="presentation" class="stroke"><a class="tabs" href="#tags" aria-controls="tags" role="tab" data-toggle="tab">Product tags</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatum, ab unde eius soluta expedita autem cumque accusantium nobis harum, quis excepturi, eligendi quaerat ullam recusandae sint ratione. Ipsam eius suscipit iure porro. Voluptas ex nobis aperiam, ratione. Atque accusantium provident minus ipsam modi dolores, nisi sit ut sunt odio deserunt at voluptatem voluptate laboriosam odit consequuntur id. Et, corporis?</div>
+        <div role="tabpanel" class="tab-pane fade" id="review">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+           <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam soluta harum obcaecati tempora voluptatibus error.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="tags">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis perspiciatis necessitatibus quia.</div>
+      </div>
+
+    </div>
+    <div class="products">
+     <h3 class="nomination">Upsell products</h3>
+      <div class="row">
+        <div class="col-sm-3 upsell">
+            <div class="shop-item sale new">
+                <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+                <div class="btn-group features">
+                  <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-compare"><i class="fa fa-exchange" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-look"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="block-sale">Sale</div>
+                <div class="block-new">New</div>
+                <p class="name">Fantastic baced bronzer</p>
+                <div class="desc">
+                  <p><span class="price">$125.00</span><del class="discount ">$130.00</del></p>
+                </div>
+                 <div class="btn-group rating">
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 upsell">
+            <div class="shop-item">
+                <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+                <div class="btn-group features">
+                  <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-compare"><i class="fa fa-exchange" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-look"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="block-sale">Sale</div>
+                <div class="block-new">New</div>
+                <p class="name">Fantastic baced bronzer</p>
+                <div class="desc">
+                  <p><span class="price">$125.00</span><del class="discount ">$130.00</del></p>
+                </div>
+                 <div class="btn-group rating">
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 upsell">
+            <div class="shop-item sale">
+                <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+                <div class="btn-group features">
+                  <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-compare"><i class="fa fa-exchange" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-look"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="block-sale">Sale</div>
+                <div class="block-new">New</div>
+                <p class="name">Fantastic baced bronzer</p>
+                <div class="desc">
+                  <p><span class="price">$125.00</span><del class="discount ">$130.00</del></p>
+                </div>
+                 <div class="btn-group rating">
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 upsell">
+            <div class="shop-item new">
+                <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+                <div class="btn-group features">
+                  <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-compare"><i class="fa fa-exchange" aria-hidden="true"></i></span></a>
+                  <a href="#"><span class="btn btn-default to-look"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="block-sale">Sale</div>
+                <div class="block-new">New</div>
+                <p class="name">Fantastic baced bronzer</p>
+                <div class="desc">
+                  <p><span class="price">$125.00</span><del class="discount ">$130.00</del></p>
+                </div>
+                 <div class="btn-group rating">
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+  </div> <!-- end container -->
 </main>
 
 

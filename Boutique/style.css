@@ -133,7 +133,7 @@ hr {
     margin:0;
     padding:0px 55px 0px 20px;
     font-size:20px;
-    color:red;
+    color: #f69b0d;
 }
 .searchbox-input::-webkit-input-placeholder {
     color: #f69b0d;
@@ -243,6 +243,7 @@ hr {
   display: inline-block;
   color: #ccc;
 }
+/*
 .sale:before {
   content: "Sale";
   position: absolute;
@@ -267,6 +268,7 @@ hr {
   border-radius: 2px;
   box-shadow: -1px 2px 3px rgba(0,0,0,.3);
 }
+*/
 .name {
   text-transform: none;
 }
@@ -278,7 +280,7 @@ hr {
 .rating {
   display: inline-block;
   color: #f69b0d;
-  padding: 20px;
+  padding-left: 10px;
 }
 .desc {
   display: inline-block;
@@ -338,18 +340,21 @@ ol.down li.active {
 .sign {
   width: 130px;
 }
-
+.control {
+  top: 50%;
+}
 a.left.carousel-control,
 a.right.carousel-control {
   background: transparent;
   border: none;
   width: 5%;
+  top: 50%;
 }
 a.left.carousel-control {
-  left: -20px;
+  left: -30px;
 }
 a.right.carousel-control {
-  right: -20px;
+  right: -35px;
 }
 /*----------------------------------------------------------------------------*/
 
@@ -408,7 +413,7 @@ a.right.carousel-control {
 }
 a.carousel-control.left.min,
 a.carousel-control.right.min {
-  background: #fff;
+  background: transparent;
   bottom: 130px;
   color: #ccc;
 }
@@ -603,11 +608,17 @@ p.h2 {
   background: #fff;
   text-transform: none;
 }
+.thumbnails {
+  margin-top: 20px;
+}
+.thumbnails .thumb:hover {
+  border-color: #f69b0d;
+}
 .nomination {
   position: relative;
   font-family: Roboto, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .nomination::before {
@@ -630,5 +641,163 @@ p.h2 {
   text-transform: none;
 }
 .range {
-  
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+.range i {
+  color: #f69b0d;
+}
+.big-price {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 20px 0 20px;
+}
+.options .nomination {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.options form {
+  margin-top: 40px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+}
+.quanty {
+  padding: 2px 0;
+}
+#quanty {
+  padding: 0;
+  width: 40px;
+  outline: none;
+}
+#quanty:active {
+  border-color: #ccc;
+}
+#quanty:focus {
+  border-color: #ccc;
+}
+.cost {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 1px 0;
+}
+.event {
+  margin-top: 25px;
+}
+.event button:hover {
+  background: #f69b0d;
+  color: #fff;
+}
+.tab {
+  margin-top: 40px;
+  text-transform: none;
+}
+.nav>li>a.tabs {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.active.stroke::after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  width: 30px;
+  height: 3px;
+  border: 2px solid #f69b0d;
+}
+.nav-pills>li.active>a {
+  color: #000;
+  background-color: #fff;
+} 
+.nav-pills>li>a:hover,
+.nav-pills>li>a:focus {
+  background-color: #fff;
+  color: #f69b0d;
+}
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+  background-color: #fff;
+  color: #f69b0d;
+}
+.products {
+  position: relative;
+  margin-top: 50px;
+}
+.products .nomination {
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+.products .upsell {
+  padding-left: 0;
+}
+.products .features {
+  position: absolute;
+  bottom: 50px;
+  padding-left: 15px;
+  display: none;
+  z-index: 99;
+}
+.products .features span:hover {
+  background: #f69b0d;
+  color: #fff;
+}
+.products .shop-item:hover .features {
+  cursor: pointer;
+  display: block;
+/*  margin: 0 auto;*/
+}
+.block-sale,
+.block-new {
+  display: none;
+}
+
+
+
+.sale .block-sale {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 60px;
+  padding: 8px 12px;
+  color: #fff;
+  background: #f69b0d;
+  text-transform: none;
+  border-radius: 2px;
+  box-shadow: -1px 2px 3px rgba(0,0,0,.3);
+}
+.new .block-new {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 60px;
+  padding: 8px 12px;
+  color: #fff;
+  background: #57DD43;
+  text-transform: none;
+  border-radius: 2px;
+  box-shadow: -1px 2px 3px rgba(0,0,0,.3);
+}
+.sale.new .block-sale+.block-new {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  width: 60px;
+  padding: 8px 12px;
+  color: #fff;
+  background: #57DD43;
+  text-transform: none;
+  border-radius: 2px;
+  box-shadow: -1px 2px 3px rgba(0,0,0,.3);
 }
