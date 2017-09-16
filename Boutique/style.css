@@ -68,6 +68,19 @@ body {
   color: #f69b0d;
   text-decoration: none;
 }
+.language {
+  padding-top: 5px;
+}
+#lang,
+#lang:active,
+#lang:focus,
+#curency,
+#curency:active,
+#curency:focus {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+}
 span.no-border {
   border: none;
   text-decoration: none;
@@ -86,6 +99,9 @@ span.no-border:first-child::after {
   content: ' | ';
   padding-left: 10px;
 }
+div.users {
+  padding: 0;
+}
 .user-area {
   padding-top: 6px;
 }
@@ -97,17 +113,22 @@ nav a.logo {
   font-family: Montserrat, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
+  padding: 5px;
 }
 nav li {
   font-family: Montserrat, Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
 }
+.menu .nav>li>a {
+  padding: 5px;
+}
 hr {
   margin-top: 0;
 }
 /*Searchbox
------------------------------------------------------------------------------*/
+-------------------disabled-----------------------------------------------------*/
+/*
 .searchbox{
     position:relative;
     min-width:50px;
@@ -147,29 +168,34 @@ hr {
 .searchbox-input:-ms-input-placeholder {
     color: #f69b0d;
 }
+*/
 .searchbox-icon,
 .searchbox-submit{
-    width:50px;
-    height:50px;
-    display:block;
-    position:absolute;
-    top:0;
-    font-family:verdana;
-    font-size:22px;
-    right:0;
+/*    width:50px;*/
+/*    height:50px;*/
+/*    display:block;*/
+/*    position:absolute;*/
+/*    top:0;*/
+/*    font-family:verdana;*/
+  font-family: Montserrat, Arial, sans-serif;
+/*    font-size:22px;*/
+  font-size:13px;
+/*    right:0;*/
     padding:0;
     margin:0;
     border:0;
     outline:0;
-    line-height:50px;
+/*    line-height:50px;*/
     text-align:center;
     cursor:pointer;
     color:#dcddd8;
     background:#fff;
 }
+/*
 .searchbox-open{
     width:100%;
 }
+*/
 
 
 
@@ -207,8 +233,8 @@ hr {
 }
 #carousel-item-generic .features {
   position: absolute;
-  top: 280px;
-  padding-left: 30px;
+  bottom: 50px;
+  padding: 0 15px;
   display: none;
   z-index: 99;
 }
@@ -218,7 +244,7 @@ hr {
 }
 #carousel-item-generic .shop-item:hover .features {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
 }
 .circles {
@@ -319,6 +345,14 @@ section.brand {
 div.brand {
   padding-left: 30px;
 }
+.brand-item {
+  width: 15px;
+  height: 150px;
+}
+.brand-item img {
+  text-align: center;
+  padding-top: 50px;
+}
 ol.down {
   position: absolute;
   bottom: -10px;
@@ -351,7 +385,7 @@ a.right.carousel-control {
   top: 50%;
 }
 a.left.carousel-control {
-  left: -30px;
+  left: -35px;
 }
 a.right.carousel-control {
   right: -35px;
@@ -801,3 +835,208 @@ p.h2 {
   border-radius: 2px;
   box-shadow: -1px 2px 3px rgba(0,0,0,.3);
 }
+
+/*-------------------------------------MEDIA QUERIES------------------------------*/
+@media screen and (max-width: 991px) {
+  #carousel-item-generic .features {
+    bottom: 80px;
+    padding: 0 15px;
+  }
+  #carousel-item-generic .features span,
+  .goods .features span {
+    padding: 1px 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+  .goods .features {
+    top: 170px;
+    padding: 0 15px;
+  }
+  div.brand {
+    padding-left: 5px;
+  }
+  .links {
+    font-size: 10px;
+  }
+  .links li {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  a.left.carousel-control {
+    left: 15px;
+  }
+  a.right.carousel-control {
+    right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .shop-item {
+    text-align: center;
+  }
+  .shop-item img {
+    display: block;
+    margin: 0 auto;
+  }
+  #carousel-item-generic .features {
+    bottom: 60px;
+/*    padding-right: 15px;*/
+    left: 85px;
+  }
+  .goods .features {
+    top: 270px;
+    left: 90px;
+  }
+  #carousel-item-generic .features span,
+  .goods .features span {
+    padding: 5px 11px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 5px;
+  }
+    .sale .block-sale,
+    .new .block-new,
+    .sale.new .block-sale+.block-new {
+    right: 60px;
+  }
+}
+@media screen and (max-width: 647px) {
+  .sale .block-sale,
+  .new .block-new,
+  .sale.new .block-sale+.block-new {
+    right: 40px;
+  }
+  #carousel-item-generic .features,
+  .goods .features {
+    left: 60px;
+  }
+  .brand-item {
+    width: 100px;
+  }
+  div.brand {
+    width: 15%;
+  }
+  
+}
+@media screen and (max-width: 573px) {
+  .sale .block-sale,
+  .new .block-new,
+  .sale.new .block-sale+.block-new {
+    right: 30px;
+  }
+  #carousel-item-generic .features,
+  .goods .features {
+    left: 40px;
+  }
+  .brand-item img {
+    display: block;
+    max-width: 85%;
+    height: auto;
+    padding: 50px 10px 0;
+  }
+}
+@media screen and (max-width: 515px) {
+  .goods .features {
+    top: 250px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .sale .block-sale,
+  .new .block-new,
+  .sale.new .block-sale+.block-new {
+    right: 20px;
+  }
+  #carousel-item-generic .features {
+    left: 20px;
+  }
+  .rating {
+    display: none;
+  }
+  .goods .features {
+    top: 230px;
+    padding: 0 10px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .goods .features {
+    top: 220px;
+  }
+}
+@media screen and (max-width: 445px) {
+  #carousel-item-generic .features span,
+  .goods .features span {
+    padding: 3px 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+  .goods .features {
+    top: 200px;
+    left: 30px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .goods .features {
+    top: 185px;
+  }
+  #carousel-item-generic .features {
+    left: 40px;
+  }
+  #carousel-item-generic .features span {
+    padding: 3px 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .goods .features {
+    left: 40px;
+    top: 170px;
+  }
+  .brand-item img {
+    max-width: 70%;
+    padding: 40px 10px 0;
+  }
+  .goods .features span {
+    padding: 3px 5px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .goods .features {
+    top: 150px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .col-xs-6 {
+    width: 100%;
+  }
+  #carousel-item-generic .features {
+    left: 100px;
+  }
+  .goods .features {
+    top: 260px;
+    left: 100px;
+  }
+  .rating {
+    display: inline-block;
+  }
+  .new .block-new,
+  .sale .block-sale,
+  .sale.new .block-sale+.block-new {
+    right: 60px;
+  }
+  #carousel-item-generic .features span,
+  .goods .features span {
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+

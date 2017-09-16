@@ -17,13 +17,23 @@
 
 <header class="header">
    <div class="container">
-     <div class="row">
-       <div class="col-sm-3">
-        <span class="text-uppercase btn btn-link no-border">eng <i class="fa fa-angle-down" aria-hidden="true"></i></span> 
-        <span class="text-uppercase btn btn-link no-border">usd <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+     <div class="row clearfix">
+       <div class="col-sm-3 pull-left language">
+<!--        <span class="text-uppercase btn btn-link no-border">eng <i class="fa fa-angle-down" aria-hidden="true"></i></span> -->
+         <select name="lang" id="lang">
+           <option value="eng">eng</option>
+           <option value="ru">ru</option>
+           <option value="ua">ua</option>
+         </select>
+<!--        <span class="text-uppercase btn btn-link no-border">usd <i class="fa fa-angle-down" aria-hidden="true"></i></span>-->
+         <select name="curency" id="curency">
+           <option value="usd">usd</option>
+           <option value="rub">rub</option>
+           <option value="uah">uah</option>
+         </select>
        </div>
-       <div class="col-sm-7"></div>
-       <div class="col-sm-2 users">
+<!--       <div class="col-sm-7"></div>-->
+       <div class="col-sm-3 pull-right users">
           <div class="user-area">
             <ul class="list-inline">
               <li><a class="text-uppercase" href="#">register</a></li>
@@ -65,11 +75,13 @@
            
             <ul class="nav navbar-nav navbar-right icons">
                <li class="search">
+<!--
                   <form class="searchbox">
                     <input type="search" placeholder="Search....." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
                     <input type="submit" class="searchbox-submit" value="GO">
-                    <span class="searchbox-icon"><span class="glyphicon glyphicon-search"></span></span>
-                  </form>
+-->
+                 <a href="#"><span class="searchbox-icon"><span class="glyphicon glyphicon-search"></span></span></a>
+<!--                  </form>-->
                </li>
 <!--              <li class="searh"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
               <li class="card"><a href="#"><span class="glyphicon glyphicon-shopping-cart"> $125.00</span></a></li>
@@ -127,16 +139,16 @@
     <div class="container">
      <div class="accomplishments">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <a href="#"><i class="fa fa-rocket" aria-hidden="true"></i> free shipping</a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <a href="#"><i class="fa fa-reply-all" aria-hidden="true"></i> money back 100%</a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i> support 24/7</a>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i> member discount</a>
         </div>
       </div>
@@ -153,9 +165,9 @@
       
 <!--      goods carts-->
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale new">
-              <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
+              <img class="img-responsive text-center" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
                 <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
@@ -175,7 +187,7 @@
           
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -196,7 +208,7 @@
           </div>
             
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item new">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -217,7 +229,7 @@
           </div>
           
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -247,7 +259,7 @@
       
 <!--      goods carts-->
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -269,7 +281,7 @@
           
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale new">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -290,7 +302,7 @@
           </div>
           
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item new">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -311,7 +323,7 @@
           </div>
           
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item">
               <img class="img-responsive" src="http://via.placeholder.com/220x330" alt="">
               <div class="btn-group features">
@@ -383,9 +395,9 @@
   <p class="text-center text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt mauris nulla.</p>
   <div class="goods">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale new">
-              <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+              <img class="img-responsive" src="http://via.placeholder.com/230x330" alt="">
               <div class="btn-group features">
                 <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
@@ -404,9 +416,9 @@
           </div>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item">
-              <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+              <img class="img-responsive" src="http://via.placeholder.com/230x330" alt="">
               <div class="btn-group features">
                 <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
@@ -425,9 +437,9 @@
           </div>
         </div>
         
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item new">
-              <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+              <img class="img-responsive" src="http://via.placeholder.com/230x330" alt="">
               <div class="btn-group features">
                 <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
@@ -446,9 +458,9 @@
           </div>
         </div>
         
-        <div class="col-sm-3">
+        <div class="col-sm-3 col-xs-6">
           <div class="shop-item sale">
-              <img class="img-responsive" src="http://via.placeholder.com/230x300" alt="">
+              <img class="img-responsive" src="http://via.placeholder.com/230x330" alt="">
               <div class="btn-group features">
                 <a href="#"><span class="btn btn-default to-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span></a>
                 <a href="#"><span class="btn btn-default to-favoutite"><i class="fa fa-heart" aria-hidden="true"></i></span></a>
@@ -476,33 +488,38 @@
    <div class="carousel-inner" role="listbox">
     <div class="item active">
       <div class="row">
-    <div class="col-sm-2 col-sm-offset-1 brand">
+    <div class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 brand">
       <div class="brand-item">
-          <img class="img-responsive" src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+       <img src="img/GOURMET.svg" alt="">
       </div>
     </div>
 
-   <div class="col-sm-2 brand">
+   <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/lyle.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/MISHKA.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/stuzzy.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/mitchell.svg" alt="">
       </div>
     </div>
         
@@ -512,33 +529,38 @@
     <div class="item">
 
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-1 brand">
+    <div class="col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/lyle.svg" alt="">
       </div>
     </div>
 
-   <div class="col-sm-2 brand">
+   <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/MISHKA.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/GOURMET.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/stuzzy.svg" alt="">
       </div>
     </div>
 
-    <div class="col-sm-2 brand">
+    <div class="col-sm-2 col-xs-2 brand">
       <div class="brand-item">
-          <img src="http://via.placeholder.com/150" alt="">
+<!--          <img src="http://via.placeholder.com/150" alt="">-->
+          <img src="img/mitchell.svg" alt="">
       </div>
     </div>
         
@@ -760,16 +782,16 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-4 col-sm-4">
           <h3>About us</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, culpa tenetur vero.</p>
           <p><i class="fa fa-map-marker" aria-hidden="true"></i> 907 Rainbow, Linh Dam - Hoang Mai - Ha Noi</p>
           <p><i class="fa fa-phone" aria-hidden="true"></i> (+84) 988 992 088</p>
-          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Lamhvdesigner@gmail.com</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> Designer@gmail.com</p>
         </div>
-        <div class="col-sm-2">
+        <div class="col-md-2 col-sm-2">
           <h3>Links</h3>
-          <ul>
+          <ul class="links">
             <li><a href="#">Contact us</a></li>
             <li><a href="##">Return policy</a></li>
             <li><a href="">Delivery</a></li>
@@ -777,33 +799,35 @@
             <li><a href="#">FAQS</a></li>
           </ul>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-3">
           <h3>Twitter</h3>
           <p><span class="nick">@Pixel-Creative</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam, odit iste?</p>
           <hr>
           <p><span class="nick">@Pixel-Creative</span> Lorem ipsum dolor sit amet...</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-3">
           <h3>Instagram</h3>
           <div class="row">
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            <div class="col-md-4 col-sm-6 instagram">
+              <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            <div class="col-md-4 col-sm-6 instagram">
+              <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            <div class="col-md-4 col-sm-6 instagram">
+              <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
             
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            <div class="col-md-4 col-sm-6 instagram">
+             <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            
+            <div class="col-md-4 col-sm-6 instagram">
+              <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
-            <div class="col-sm-4 instagram">
-              <div class="insta-foto"></div>
+            
+            <div class="col-md-4 col-sm-6 instagram">
+              <img class="img-responsive img-thumbnail" src="http://via.placeholder.com/75" alt="">
             </div>
           </div>
         </div>
@@ -813,17 +837,17 @@
   <div class="footer-middle">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-3">
           <p class="text-uppercase">sign up for our</p>
           <p class="text-uppercase h2">News Letter</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6 col-sm-5">
           <form class="form-inline">
             <input type="email" class="form-control" id="email" placeholder="Enter your mail...">
             <button type="submit" class="btn btn-link text-uppercase"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> subscribe</button>
           </form>
         </div>
-        <div class="col-sm-3">
+        <div class="col-md-3 col-sm-4">
           <div class="btn-group social" role="group" aria-label="social">
             <button type="button" class="btn btn-link"><i class="fa fa-facebook" aria-hidden="true"></i></button>
             <button type="button" class="btn btn-link"><i class="fa fa-google-plus" aria-hidden="true"></i></button>
@@ -851,6 +875,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="scrript.js"></script>
+<!--<script src="scrript.js"></script>-->
 </body>
 </html>
