@@ -520,6 +520,14 @@ a.right.carousel-control.min {
 .news .text a {
   padding: 0 15px;
 }
+.news a.active,
+.news a.active:active,
+.news a.active:visited,
+.news a.active:focus {
+  text-decoration: none;
+  color: #f69b0d;
+  outline: none;
+}
 .news-slider {
   margin-top: 20px;
 }
@@ -1040,3 +1048,15 @@ p.h2 {
   }
 }
 
+
+.jumbotron {
+  background: transparent;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-top: 5px;
+}
+
+.page {
+  margin-top: 30px;
+}
