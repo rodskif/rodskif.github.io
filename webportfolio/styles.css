@@ -1,0 +1,116 @@
+
+.wrapper {
+  background: #000 url('http://www.kolb.cz/wp-content/uploads/2016/04/pace-oregon-state-php-mysql-programming-code-web-design.jpg') repeat-y;
+  width: 100%;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-weight: bold;
+}
+.bg-dark-menu {
+  background-color: #222;
+}
+.navbar-brand img {
+/*   border-radius: 50%; */
+  margin-right: 10px;
+}
+.slider .carousel-item p, 
+.slider .carousel-item h3 {
+  color: #fff;
+  font-weight: bold;
+}
+.slider .carousel-item img {
+  width: 800px;
+  height: 400px;
+}
+.slider .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.big-heading {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.big-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+  background: #000;
+}
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  z-index: 1;
+}
+/* =====greetings which change during the day===== */
+
+#alrt_b,#alrt_b2,#alrt_b3,#alrt_b4{
+  display:none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: ;
+  text-shadow: 2px 2px 2px #92ff63
+}
+
+/* =====reward carousel==== */
+.spe-cor .carousel-item > div {
+  float: left;
+}
+.spe-cor .carousel-by-item [class*="cloneditem-"] {
+  display: none;
+}
+
+.map {
+  margin: 30px 0;
+}
+iframe {
+  width: 100%;
+}
+.contact {
+  padding-bottom: 20px;
+}
+footer {
+  background-color: #000;
+}
+footer p {
+  font-size: 18px;
+  padding: 20px;
+}
+footer span {
+  font-size: 24px;
+  padding: 5px;
+}
+footer a.btn {
+  width: 40px;
+  height: 40px;
+  margin: 20px 3px 0;
+/*   padding: 5px 5px; */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+footer a.btn:hover i {
+  color: #000;
+}
+footer a.btn:last-child i {
+  margin-left: -3px;
+}
+
+.brown {
+  color: #845a11;
+}
+.red {
+  color: #f00;
+}
