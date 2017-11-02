@@ -1,10 +1,12 @@
 
 .wrapper {
-  background: #000 url('http://www.kolb.cz/wp-content/uploads/2016/04/pace-oregon-state-php-mysql-programming-code-web-design.jpg') repeat-y;
+  background: url('https://s19.postimg.org/k3g3um65f/9d73cb737164760c699911ddaccf02b4.png') repeat-y;
+  background-size: contain;
+  background-color:  rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 .container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-weight: bold;
 }
@@ -22,13 +24,19 @@
 }
 .slider .carousel-item img {
   width: 800px;
-  height: 400px;
+/*  height: height: 600px;*/
+}
+.slider .carousel-item a:hover {
+  color: #000;
+}
+.btn-outline-light:hover {
+  color: #000;
 }
 .slider .carousel-caption {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .big-heading {
-  margin-top: 45px;
+  padding-top: 45px;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -43,13 +51,14 @@
   text-align: center;
   text-transform: uppercase;
   z-index: 2;
-  background: #000;
+/*  background: #000;*/
 }
 .big-heading::after {
   content: "";
   position: relative;
-  top: -25px;
+/*  top: -25px;*/
   display: block;
+/*  border-top: 2px solid #fff;*/
   border-bottom: 2px solid #fff;
   z-index: 1;
 }
@@ -57,13 +66,18 @@
 
 #alrt_b,#alrt_b2,#alrt_b3,#alrt_b4{
   display:none;
-  color: #fff;
+/*  color: #fff;*/
   font-size: 24px;
   font-weight: bold;
-  text-decoration: ;
-  text-shadow: 2px 2px 2px #92ff63
+/*  text-decoration: ;*/
+/*  text-shadow: 2px 2px 2px #92ff63*/
 }
-
+figure img {
+  filter: grayscale(1);
+}
+figure img:hover {
+  filter: grayscale(0.5);
+}
 /* =====reward carousel==== */
 .spe-cor .carousel-item > div {
   float: left;
