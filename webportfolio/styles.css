@@ -85,7 +85,12 @@ figure img:hover {
 .spe-cor .carousel-by-item [class*="cloneditem-"] {
   display: none;
 }
-
+.reward {
+  filter: grayscale(0.8);
+}
+.reward:hover {
+  filter: grayscale(0.2);
+}
 .map {
   margin: 30px 0;
 }
