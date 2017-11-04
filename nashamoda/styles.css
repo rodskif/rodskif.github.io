@@ -4,9 +4,10 @@
 .user-area select {
   border: none;
   outline: none;
+  padding-right: 10px;
   -webkit-appearance: none;
-  background-image: url('/images/stories/select-arrow-pink.png');
-  background-position: right center;
+  background-image: url('img/down-arrow.png');
+  background-position: right 60%;
   background-repeat: no-repeat;
   line-height: 1em;
   /* for FF */
@@ -115,4 +116,17 @@
 }
 .actual {
   margin-bottom: 100px;
+}
+.video-review {
+  margin-bottom: 100px;
+}
+
+.feature-card {
+  margin-bottom: 100px;  
+}
+
+.feature-card-item {
+  min-height: 200px;
+  min-width: 270px;
+  border: 1px solid #9c9c9c;
 }
