@@ -3,48 +3,65 @@
 }
 .top-menu {
   height: 42px;
+  width: 1170px;
+  padding-left: 0;
+  padding-right: 0;
   color: #9a9a9a;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
 }
-.top-menu a.nav-item.nav-link {
-  padding-right: 15px;
+.top-menu .navbar-nav a.nav-item.nav-link {
+  padding-left: 0;
+  padding-right: 25px;
 }
+/*
 .top-menu a.nav-item.nav-link:first-child {
   padding-left: 0;
 }
+*/
 .top-menu a.nav-item.nav-link:last-child {
-  padding-right: 50px;
+  padding-right: 48px;
 }
 
 .top-menu span {
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
+  padding-right: 10px;
   line-height: 32px;
   color: #484848;
   font-size: 14px;
   font-weight: 700;
 }
+.tel:after {
+  content: "|";
+  width: 1px;
+  display: inline-block;
+  padding-left: 10px;
+}
+.top-menu span.phone {
+  padding-right: 5px;
+}
 .top-menu small {
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
+  padding-right: 27px;
   line-height: 32px;
   color: #9a9a9a;
   font-size: 12px;
   font-weight: 400;
 }
 .top-menu .status-link {
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-right: 23px;
+  padding-left: 0;
   color: #d35353;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
 }
 .user-area {
   height: 42px;
-  width: 181px;
+  width: 183px;
   line-height: 42px;
   background-color: #f3f3f3;
   border: 1px solid #cdcdcd;
@@ -52,14 +69,19 @@
 .user-area select {
   border: none;
   outline: none;
-  padding: 0 10px 4px 14px;
+  padding: 3px 13px 4px 10px;
+  color: #353535;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
   text-transform: uppercase;
   -webkit-appearance: none;
   background-color: transparent;
   background-image: url('img/down-arrow.png');
-  background-position: right 40%;
+  background-position: right 50%;
   background-repeat: no-repeat;
-  line-height: 1em;
+/*  line-height: 1em;*/
   /* for FF */
   -moz-appearance: none;
   text-indent: 0.01px; 
@@ -73,8 +95,8 @@
 }
 .user-area a.nav-item.nav-link.user-link {
   color: #353535;
-  padding: 4px 12px 4px 12px;
-  font-family: OpenSans, Arial, sans-serif;
+  padding: 4px 13px 4px 13px;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 32px;
@@ -85,24 +107,30 @@
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
+.head .col {
+  padding-left: 0;
+  padding-right: 0;
+}
 .head .logo {
   height: 40px;
   padding: 30px 0;
-  margin-right: 70px;
+  margin-right: 110px;
 }
 .head .form-search {
   position: relative;
-  width: 460px;
+  width: 470px;
   height: 40px;
   margin-top: 30px;
-  margin-right: 60px;
+  margin-right: 109px;
   background-color: white;
 }
 .form-search input[type="search"] {
-  width: 460px;
+  width: 470px;
   height: 40px;
+  padding-left: 20px;
+  padding-right: 50px;
   color: #888;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -111,12 +139,13 @@
 }
 .form-search button {
   position: absolute;
-  right: 25px;
-  top: 25%;
+  right: 20px;
+  bottom: 7px;
+/*  top: 25%;*/
   width: 25px;
   height: 25px;
   color: #888;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -130,21 +159,22 @@
   width: 110px;
   height: 60px;
   padding: 20px 0;
-  background: url(img/like.png) no-repeat 50% center;
+  margin-right: 50px;
+  background: url(img/like.png) no-repeat 50% 60%;
 }
 .head .cart {
   position: relative;
   height: 60px;
-  width: 75px;
+  width: 73px;
   padding: 20px 0;
-  background: url(img/shopping-bag.png) no-repeat left center;
+  background: url(img/shopping-bag.png) no-repeat 35% 60%;
   text-transform: uppercase;
 }
 .head .wish-list p {
   padding-top: 35px;
   text-align: center;
   color: #010101;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -153,7 +183,7 @@
   padding-top: 35px;
   text-align: left;
   color: #010101;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 32px;
@@ -161,8 +191,8 @@
 .head .cart .cart-count {
   position: absolute;
   display: inline-block;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 12px;
   width: 20px;
   height: 20px;
   text-align: center;
@@ -171,17 +201,19 @@
   border-radius: 50%;
 }
 .main-menu {
-  height: 42px;
-  padding-left: 10px;
+  height: 41px;
+  padding-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
   color: #484848;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 32px;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 }
 .main-menu li {
-  padding-right: 50px;
+  padding-right: 60px;
 }
 .main-menu li:last-child {
   padding-right: 0;
@@ -190,24 +222,34 @@
   padding: 0;
 }
 .main-menu .nav-link:hover {
-  box-shadow: 0 5px 0 0 #d35353;;
+  box-shadow: 0 7px 0 0 #d35353;;
 }
 .dropdown-menu {
+  left: -20px;
   border: none;
+  padding-top: 5px;
+}
+.dropdown-menu a {
+  font-family: "Exo 2", Arial, sans-serif;
+  font-size: 14px;
+  color: #484848;
 }
 .dropdown-menu a:hover {
   color: #d35353;
 }
 
 .header {
-  position: relative;
+/*  position: relative;*/
   width: 100%;
   min-height: 500px;
+  border-top: 1px solid #cdcdcd;
 }
 .header img {
+/*
   position: absolute;
   top: 0;
   left: 0;
+*/
   min-width: 100%;
   min-height: 500px;
 }
