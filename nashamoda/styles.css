@@ -286,7 +286,7 @@
   background-color: rgba(255, 255, 255, 0.2);
   padding: 50px 10px;
   color: #fff;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -372,7 +372,7 @@
   padding-top: 20px;
   padding-left: 85px;
   color: #353535;
-  font-family: Exo2 , Arial, sans-serif;
+  font-family: "Exo 2" , Arial, sans-serif;
   font-size: 14px;
 }
 .feature-caption {
@@ -416,6 +416,16 @@
 /*  border-top: 2px solid #000;*/
   border-bottom: 2px solid #bbb;
   z-index: 1;
+}
+.view-all {
+  margin-top: 60px;
+}
+.view-all a {
+  color: #d35353;
+  font-family: "Exo 2", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; 
 }
 .actual {
   margin-bottom: 100px;
@@ -538,14 +548,90 @@ input[type="email"] {
   color: #fff;
   margin-top: 10px;
 }
-
 .form-sub {
   width: 90%;
   border-bottom: 1px solid #fff;
 }
-
 .btn-sub {
   border: none;
   background: transparent;
   color: #fff;
 }
+
+
+
+.review {
+  margin-bottom: 100px;
+}
+.review-item {
+  margin-bottom: 60;
+}
+.review-item img {
+  width: 127px;
+  height: 191px;
+  margin-left: 87px;
+  margin-right: 30px;
+  border: 5px solid #efefef;
+}
+.review-item p {
+  margin: 0;
+  color: #353535;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.review-item b {
+  font-weight: 700;
+}
+.review-item small {
+  opacity: 0.6;
+  color: #353535;
+  font-family: "Exo 2", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 20px;
+}
+.review-item .review-text {
+  position: relative;
+  margin-top: 8px;
+  max-width: 500px;
+  color: #353535;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 20px;
+}
+.review-text .quote {
+  position: absolute;
+  top: 15px;
+  left: 215px;
+  opacity: 0.16;
+  color: #000;
+  font-size: 72px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.videoreview {
+  margin-bottom: 100px;
+}
+.videoreview-item figcaption {
+  margin-top: 16px;
+  color: #353535;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
