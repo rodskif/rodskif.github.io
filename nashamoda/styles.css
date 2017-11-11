@@ -521,10 +521,10 @@ header .container {
   width: 220px;
   height: 332px;
   top: 0;
-  right: -2px;
+  right: 1px;
 }
 .card-galery {
-  padding: 5px 9px;
+  
 }
 .card-galery i {
   text-align: center;
@@ -535,9 +535,108 @@ header .container {
   margin-top: 2px;
   margin-bottom: 3px;
 }
-.card-galery .active {
+.card-galery img.active {
   outline: 1px solid #cdcdcd;
 }
+/*--------- styles for vertical sloder ------*/
+
+
+
+.jcarousel-wrapper {  
+  /*the same as card galery*/
+  padding: 25px 10px;
+  width: 70px;
+  height: 376px;
+/*
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    position: relative;
+
+    width: 90px;
+    height: 700px;
+*/
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 42px;
+    height: 376px;
+}
+
+.jcarousel img {
+    display: block;
+}
+
+.jcarousel ul {
+    width: 100%;
+    height: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+.jcarousel ul a {
+  display: inline-block;
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    left: 15px;
+/*     top: 200px; */
+    width: 30px;
+/*    height: 30px;*/
+    text-align: center;
+/*    background: #4E443C;*/
+    color: #cdcdcd;
+    text-decoration: none;
+/*    text-shadow: 0 0 1px #000;*/
+    font: 18px/24px;
+/*
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+*/
+}
+
+.jcarousel-control-prev {
+    top: 0;
+}
+
+.jcarousel-control-next {
+    bottom: 25px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+.current {
+  border: 1px solid black;
+}
+
+
+
+
+/*------------- end vertical slider  ---------*/
 .card-detail p {
   margin-bottom: 15px;
   color: #353535;
@@ -577,6 +676,7 @@ header .container {
 */
   background-color: #fff;
   outline: 1px solid #cdcdcd;
+  outline-offset: -1px;
   cursor: pointer;
 }
 
