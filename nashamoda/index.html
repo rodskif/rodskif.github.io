@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,500,700|Open+Sans:400,800&amp;subset=cyrillic" rel="stylesheet"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js"></script>
   <script src="https://use.fontawesome.com/850399e6e1.js"></script>
 </head>
 <body>
@@ -275,22 +277,56 @@
     </div>
     <div class="actual-cards d-flex justify-content-between">
       <div class="card-item">
-        <img class="img-fluid" src="img/card1.jpg" width="220" height="332" alt="">
+        <img class="img-fluid" src="img/card1.jpg" width="220" height="332" rel="foto1" alt="">
         <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
         <p class="text-center"><!--<del class="discount">$130.00</del>--><span class="price">307.46 BYN</span></p>
         <!------------------------------Hover on the card------------------------------>
         <div class="card-hover-item">
-           <div class="card-galery d-flex flex-column">
-             <i class="fa fa-chevron-up" aria-hidden="true"></i>
-             <img class="active" src="img/card1.jpg" width="44" height="70" alt="">
-             <img src="img/card1.jpg" width="44" height="70" alt="">
-             <img src="img/card1.jpg" width="44" height="70" alt="">
-             <img src="img/card1.jpg" width="44" height="70" alt="">
-             <img src="img/card1.jpg" width="44" height="70" alt="">
-             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+           <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+              <ul>
+                <li>
+                  <a class="current" href="img/card1.jpg" rel="foto1">
+                    <img src="img/card1.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card2.jpg" rel="foto1">
+                    <img src="img/card2.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card3.jpg" rel="foto1">
+                    <img src="img/card3.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card4.jpg" rel="foto1">
+                    <img src="img/card4.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a  href="img/card5.jpg" rel="foto1">
+                    <img src="img/card5.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card6.jpg" rel="foto1">
+                    <img src="img/card6.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card7.jpg" rel="foto1">
+                    <img src="img/card7.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
            </div>
            <div class="card-detail">
-              <img class="img-fluid" src="img/card1.jpg" width="220" height="332" alt="">
+              <img class="img-fluid photo-hover" src="img/card1.jpg" width="220" height="332" onmouseover="this.src='img/card1.jpg';" alt="">
               <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
               <p class="text-center"><del class="discount">400.46 BYN</del><span class="price">307.46 BYN</span></p>
               <p class="size text-center"><span class="text-muted">42</span><span class="text-muted">44</span><span>46</span><span>48</span><span class="text-bordered"> 50 </span></p>
@@ -299,7 +335,7 @@
          <!--------------------------end hover on the card------------------------------>
       </div>
       <div class="card-item">
-        <img class="img-fluid" src="img/card2.jpg" width="220" height="332" alt="">
+        <img class="img-fluid" src="img/card2.jpg" width="220" height="332" rel="foto2" alt="">
         <div class="circle block-hit">Хит</div>
         <div class="circle block-new">New</div>
         <div class="circle block-sale">-40%</div>
@@ -307,17 +343,51 @@
         <p class="text-center"><!--<del class="discount">$130.00</del>--><span class="price">307.46 BYN</span></p>
         <!------------------------------Hover on the card------------------------------>
         <div class="card-hover-item">
-           <div class="card-galery d-flex flex-column">
-             <i class="fa fa-chevron-up" aria-hidden="true"></i>
-             <img class="active" src="img/card2.jpg" width="44" height="70" alt="">
-             <img src="img/card2.jpg" width="44" height="70" alt="">
-             <img src="img/card2.jpg" width="44" height="70" alt="">
-             <img src="img/card2.jpg" width="44" height="70" alt="">
-             <img src="img/card2.jpg" width="44" height="70" alt="">
-             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+           <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+              <ul>
+                <li>
+                  <a class="current" href="img/card2.jpg" rel="foto2">
+                    <img src="img/card2.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card3.jpg" rel="foto2">
+                    <img src="img/card3.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card1.jpg" rel="foto2">
+                    <img src="img/card1.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card4.jpg" rel="foto2">
+                    <img src="img/card4.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a  href="img/card5.jpg" rel="foto2">
+                    <img src="img/card5.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card6.jpg" rel="foto2">
+                    <img src="img/card6.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card7.jpg" rel="foto2">
+                    <img src="img/card7.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
            </div>
            <div class="card-detail">
-              <img class="img-fluid" src="img/card2.jpg" width="220" height="332" alt="">
+              <img class="img-fluid photo-hover" src="img/card2.jpg" width="220" height="332" onmouseover="this.src='img/card2.jpg';" alt="">
               <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
               <p class="text-center"><del class="discount">400.46 BYN</del><span class="price">307.46 BYN</span></p>
               <p class="size text-center"><span class="text-muted">42</span><span class="text-muted">44</span><span>46</span><span>48</span><span class="text-bordered"> 50 </span></p>
@@ -326,64 +396,54 @@
          <!--------------------------end hover on the card------------------------------>
       </div>
       <div class="card-item">
-        <img class="img-fluid photo" src="img/card3.jpg" width="220" height="332" alt="">
+        <img class="img-fluid" src="img/card3.jpg" width="220" height="332" rel="foto3" alt="">
         <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
         <p class="text-center"><!--<del class="discount">$130.00</del>--><span class="price">307.46 BYN</span></p>
         <!------------------------------Hover on the card------------------------------>
         <div class="card-hover-item">
 <!--           <div class="card-galery d-flex flex-column">-->
           <div class="jcarousel-wrapper">
-            
-            
-            
-            
             <div class="jcarousel">
               <ul>
-                <li class="">
-                  <a class="current" href="img/card3.jpg">
+                <li>
+                  <a class="current" href="img/card3.jpg" rel="foto3">
                     <img src="img/card3.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="img/card1.jpg">
+                  <a href="img/card1.jpg" rel="foto3">
                     <img src="img/card1.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="img/card2.jpg">
+                  <a href="img/card2.jpg" rel="foto3">
                     <img src="img/card2.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="img/card4.jpg">
+                  <a href="img/card4.jpg" rel="foto3">
                     <img src="img/card4.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a  href="img/card5.jpg">
+                  <a  href="img/card5.jpg" rel="foto3">
                     <img src="img/card5.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="img/card6.jpg">
+                  <a href="img/card6.jpg" rel="foto3">
                     <img src="img/card6.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
                 <li>
-                  <a href="img/card7.jpg">
+                  <a href="img/card7.jpg" rel="foto3">
                     <img src="img/card7.jpg" width="40" height="70" alt="">
                   </a>
                 </li>
               </ul>
             </div>
-            
-            
             <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
             <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            
-            
-            
-            
 <!--
              <i class="fa fa-chevron-up" aria-hidden="true"></i>
              <img class="active" src="img/card3.jpg" width="44" height="70" alt="">
@@ -395,7 +455,7 @@
 -->
            </div>
            <div class="card-detail">
-              <img class="img-fluid photo-hover" src="img/card3.jpg" width="220" height="332" alt="">
+              <img class="img-fluid photo-hover" src="img/card3.jpg" width="220" height="332" onmouseover="this.src='img/card3.jpg';" alt="">
               <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
               <p class="text-center"><del class="discount">400.46 BYN</del><span class="price">307.46 BYN</span></p>
               <p class="size text-center"><span class="text-muted">42</span><span class="text-muted">44</span><span>46</span><span>48</span><span class="text-bordered"> 50 </span></p>
@@ -404,7 +464,7 @@
          <!--------------------------end hover on the card------------------------------>
       </div>
       <div class="card-item">
-        <img class="img-fluid" src="img/card4.jpg" width="220" height="332" alt="">
+        <img class="img-fluid" src="img/card4.jpg" width="220" height="332" rel="foto4" alt="">
         <div class="circle block-hit">Хит</div>
         <div class="circle block-new">New</div>
         <div class="circle block-sale">-40%</div>
@@ -412,17 +472,51 @@
         <p class="text-center"><!--<del class="discount">$130.00</del>--><span class="price">307.46 BYN</span></p>
         <!------------------------------Hover on the card------------------------------>
         <div class="card-hover-item">
-           <div class="card-galery d-flex flex-column">
-             <i class="fa fa-chevron-up" aria-hidden="true"></i>
-             <img class="active" src="img/card4.jpg" width="44" height="70" alt="">
-             <img src="img/card4.jpg" width="44" height="70" alt="">
-             <img src="img/card4.jpg" width="44" height="70" alt="">
-             <img src="img/card4.jpg" width="44" height="70" alt="">
-             <img src="img/card4.jpg" width="44" height="70" alt="">
-             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+           <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+              <ul>
+                <li>
+                  <a class="current" href="img/card4.jpg" rel="foto4">
+                    <img src="img/card4.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card1.jpg" rel="foto4">
+                    <img src="img/card1.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card2.jpg" rel="foto4">
+                    <img src="img/card2.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card3.jpg" rel="foto4">
+                    <img src="img/card3.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a  href="img/card5.jpg" rel="foto4">
+                    <img src="img/card5.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card6.jpg" rel="foto4">
+                    <img src="img/card6.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card7.jpg" rel="foto4">
+                    <img src="img/card7.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
            </div>
            <div class="card-detail">
-              <img class="img-fluid" src="img/card4.jpg" width="220" height="332" alt="">
+              <img class="img-fluid photo-hover" src="img/card4.jpg" width="220" height="332" onmouseover="this.src='img/card4.jpg';" alt="">
               <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
               <p class="text-center"><del class="discount">400.46 BYN</del><span class="price">307.46 BYN</span></p>
               <p class="size text-center"><span class="text-muted">42</span><span class="text-muted">44</span><span>46</span><span>48</span><span class="text-bordered"> 50 </span></p>
@@ -431,22 +525,56 @@
          <!--------------------------end hover on the card------------------------------>
       </div>
       <div class="card-item">
-        <img class="img-fluid" src="img/card5.jpg" width="220" height="332" alt="">
+        <img class="img-fluid" src="img/card5.jpg" width="220" height="332" rel="foto5" alt="">
         <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
         <p class="price text-center"><!--<del class="price-discount">$130.00</del>--><span class="price-active">307.46 BYN</span></p>
         <!------------------------------Hover on the card------------------------------>
         <div class="card-hover-item">
-           <div class="card-galery d-flex flex-column">
-             <i class="fa fa-chevron-up" aria-hidden="true"></i>
-             <img class="active" src="img/card5.jpg" width="44" height="70" alt="">
-             <img src="img/card5.jpg" width="44" height="70" alt="">
-             <img src="img/card5.jpg" width="44" height="70" alt="">
-             <img src="img/card5.jpg" width="44" height="70" alt="">
-             <img src="img/card5.jpg" width="44" height="70" alt="">
-             <i class="fa fa-chevron-down" aria-hidden="true"></i>
+           <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+              <ul>
+                <li>
+                  <a class="current" href="img/card5.jpg" rel="foto5">
+                    <img src="img/card5.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card1.jpg" rel="foto5">
+                    <img src="img/card1.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card2.jpg" rel="foto5">
+                    <img src="img/card2.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card3.jpg" rel="foto5">
+                    <img src="img/card3.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a  href="img/card4.jpg" rel="foto5">
+                    <img src="img/card4.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card6.jpg" rel="foto5">
+                    <img src="img/card6.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="img/card7.jpg" rel="foto5">
+                    <img src="img/card7.jpg" width="40" height="70" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="jcarousel-control-prev"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+            <a href="#" class="jcarousel-control-next"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
            </div>
            <div class="card-detail">
-              <img class="img-fluid" src="img/card5.jpg" width="220" height="332" alt="">
+              <img class="img-fluid photo-hover" src="img/card5.jpg" width="220" height="332" onmouseover="this.src='img/card5.jpg';" alt="">
               <p class="name text-center text-uppercase">Пальто женское демисезонное Т6655</p>
               <p class="text-center"><del class="discount">400.46 BYN</del><span class="price">307.46 BYN</span></p>
               <p class="size text-center"><span class="text-muted">42</span><span class="text-muted">44</span><span>46</span><span>48</span><span class="text-bordered"> 50 </span></p>
@@ -640,7 +768,7 @@
           <img src="img/card4.jpg" class="img-thumbnail float-left rewiew-right" width="127" height="191" alt="">
           <p><b>Екатерина Викторовна,</b> г. Гомель</p>
           <small class="text-muted">24.10.17 (сегодня)</small>
-          <p class="review-text">
+          <p class="review-text right-text">
 <!--            <i class="fa fa-quote-left" aria-hidden="true"></i>-->
             <i class="quote">&ldquo;</i>Спасибо за работу. Товар доставили, сообщили и о принятии заказа и о доставки в магазин. 
             Товар соответствует описанию на сайте 100%. Купили с удовольствием.
@@ -793,7 +921,7 @@
 <!--==================================================end last block==================================-->
 <!--============================================================footer===============================-->
 <footer>
-  <div class="stock"><i class="fa fa-chevron-up fa-2x chevron" aria-hidden="true"></i></div>
+  <div class="stock"><a href="" id="back-top" onclick="return up()"><i class="fa fa-chevron-up fa-2x chevron" aria-hidden="true"></i></a></div>
   <div class="top-footer">
     <div class="container">
       <div class="d-flex">
@@ -859,10 +987,12 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--<script src="jCarousel.js"></script>-->
+<!--<script src="https://sorgalla.com/jcarousel/dist/jquery.jcarousel.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </body>
 </html>

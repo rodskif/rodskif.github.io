@@ -1,5 +1,6 @@
 //---------- vertical slider -----------------------
-//(function($) {
+
+(function($) {
     $(function() {
         $('.jcarousel')
             .jcarousel({
@@ -37,29 +38,54 @@
             })
             .jcarouselPagination();
     });
-//})(jQuery);
+})(jQuery);
 
 //--------------- photo gallery -------------
-var currentSrc;
+//var currentSrc;
+var imgAtr;
 $(".jcarousel li").on("click", "a", function () {
-    // S(".current").remoteClass("current");
-    // $(this).addClass("current");
-    $(".current").removeClass("current");
-    $(this).addClass("current");
+//    $(".current").removeClass("current");
+//    $(this).addClass("current");
    // $(this).addClass("current").siblings().removeClass("current")
-    $(".photo").attr("src", $(this).prop("href"));
-    currentSrc = $(this).prop("href");
+    imgAtr = $(this).prop("rel");
+//    $(".photo").attr("src", $(this).prop("href"));    
+    $("img[rel='"+imgAtr+"']").attr("src", $(this).prop("href"));
+//    currentSrc = $(this).prop("href");
    return false;
 });
 $(".jcarousel li").on("mouseenter", "a", function () {
-  $(".current").removeClass("current");
-  $(this).addClass("current");
+//  $(".current").removeClass("current");
+//  $(this).addClass("current");
   $(".photo-hover").attr("src", $(this).prop("href"));
    return false;
 });
-$(".jcarousel li").on("mouseleave", "a", function () {
-  // $(".current").removeClass("current");
-  $(this).removeClass("current");
-  $(".photo img").attr("src", currentSrc);
-   return false;
+
+//$(".jcarousel li").on("mouseleave", "a", function () {
+//  // $(".current").removeClass("current");
+//  $(this).removeClass("current");
+//  $(".photo img").attr("src", currentSrc);
+//   return false;
+//});
+
+//--------------------------- change size ----------------------------
+$(".size").on("click", "span", function () {
+  $(".text-bordered").removeClass("text-bordered");
+  $(this).addClass("text-bordered");
+//  $(this).css("border", "1px solid #ccc");
+})
+
+//------------------------------------------ Up button ----------------------
+function up() {  
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+if(top > 0) {  
+  window.scrollBy(0,((top+100)/-10));  
+  t = setTimeout('up()',20);  
+} else clearTimeout(t);  
+return false;  
+}
+jQuery(function(f){
+    var element = f('#back-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](250);           
+    });
 });

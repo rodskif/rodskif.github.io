@@ -592,23 +592,17 @@ header .container {
 .jcarousel-control-next {
     position: absolute;
     left: 15px;
-/*     top: 200px; */
     width: 30px;
-/*    height: 30px;*/
     text-align: center;
-/*    background: #4E443C;*/
     color: #cdcdcd;
     text-decoration: none;
-/*    text-shadow: 0 0 1px #000;*/
     font: 18px/24px;
-/*
-    -webkit-border-radius: 30px;
-       -moz-border-radius: 30px;
-            border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-*/
+
+}
+.jcarousel-control-prev:hover,
+.jcarousel-control-next:hover {
+  color: #cdcdcd;
+  text-decoration: none;
 }
 
 .jcarousel-control-prev {
@@ -659,15 +653,21 @@ header .container {
   margin-bottom: 10px;
 }
 .size span {
-  margin-right: 10px;
-}
-.size .text-bordered {
   display: inline-block;
+  margin-right: 10px;
+  padding-top:5px;
   width: 25px;
   height: 25px;
-  border: 1px solid #ccc;
-  padding-top:5px
 }
+.size .text-bordered {
+/*  display: inline-block;*/
+/*
+  width: 25px;
+  height: 25px;
+*/
+  outline: 1px solid #ccc;
+}
+
 .card-item:hover .card-hover-item {
   display: flex;
 /*
@@ -969,6 +969,9 @@ input[type="email"] {
   font-size: 72px;
   font-weight: 300;
   font-style: italic;
+}
+.right-text .quote {
+  left: 198px;
 }
 
 
