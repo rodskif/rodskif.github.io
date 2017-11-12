@@ -54,8 +54,8 @@ $(".jcarousel li").on("click", "a", function () {
    return false;
 });
 $(".jcarousel li").on("mouseenter", "a", function () {
-//  $(".current").removeClass("current");
-//  $(this).addClass("current");
+  $(".current").removeClass("current");
+  $(this).addClass("current");
   $(".photo-hover").attr("src", $(this).prop("href"));
    return false;
 });
