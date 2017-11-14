@@ -89,3 +89,9 @@ jQuery(function(f){
         element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](250);           
     });
 });
+
+//-------------------------- delete text from button when screen 320px ----------------------------
+if (matchMedia) {
+    const mq = window.matchMedia("(max-width: 320px)");
+    $(".toggle-menu").html("");
+}
