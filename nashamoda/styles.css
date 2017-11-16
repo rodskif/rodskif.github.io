@@ -10,6 +10,19 @@ header .container {
     display: table;
     clear: both;
 }
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 .top-menu {
   height: 40px;
   width: 1170px;
@@ -1246,6 +1259,16 @@ input[type="email"] {
   .actual-cards .card-item:last-child {
     display: none;
   }
+  .header {
+    min-height: 470px;
+    background-position: 73% 50%;
+  }
+}
+/*--------------------------------- 1195 ------------------------*/
+@media only screen and (max-width: 1195px) {
+  .header {
+    min-height: 460px;
+  }
 }
 /*---------------------------------------1170----------------------------------------------*/
 
@@ -1269,7 +1292,7 @@ input[type="email"] {
     margin-right: 40px;
   }
   .main-menu li {
-    padding-right: 46px;
+    padding-right: 55px;
   }
   .header {
     min-height: 410px;
@@ -1348,11 +1371,24 @@ input[type="email"] {
     width: 60%;
   }
 }
+/*---------------------------1130-----------------*/
+@media only screen and (max-width: 1130px) {
+.main-menu li {
+    padding-right: 50px;
+  }
+}
 /*------------------------------------------- 1105 --------------------------------------*/
 @media only screen and (max-width: 1105px) {
   .head .logo {
     margin-right: 40px;
   }
+  .main-menu li {
+    padding-right: 45px;
+  }
+  .features {
+    display: none;
+  }
+/*
   .features .col-3 {
     max-width: 50%;
     flex: none;
@@ -1366,18 +1402,27 @@ input[type="email"] {
   .feature-text {
     text-align: center;
   }
+*/
 }
 /*------------------------------------------------------1055------------------------------*/
 @media only screen and (max-width: 1055px) {
   .top-menu {
-    padding-left: 80px;
+    padding-left: 120px;
   }
   .top-menu .navbar-nav {
     display: none;
   }
+/*
   .top-menu .select { 
     display: inline-block; 
     margin-right: 10px;
+  }
+*/
+  .top-menu small {
+    padding-right: 30px;
+  }
+  .top-menu .status-link {
+    padding-right: 30px;
   }
   .head {
     padding-left: 80px;
@@ -1459,8 +1504,17 @@ input[type="email"] {
 }
 /*---------------------------------------------- 1050 ----------------------------*/
 @media only screen and (max-width: 1050px) {
-.main-menu {
-    padding-left: 50px;
+  .main-menu li {
+    padding-right: 30px;
+  }
+  .main-menu {
+    padding-left: 35px;
+  }
+}
+/*------------------------ 981 ---------------*/
+@media only screen and (max-width: 981px) {
+  .models {
+    display: none;
   }
 }
 /*--------------------------------------------965-------------------------------------*/
@@ -1468,6 +1522,7 @@ input[type="email"] {
   .txt-center {
     padding: 45px 10px;
   }
+/*
   .model-item:hover .txt-center {
     padding: 90px 10px;
   }
@@ -1478,6 +1533,7 @@ input[type="email"] {
     padding: 25px 10px;
     margin: -60px 0 0 -110px;
   }
+*/
   .review .col-6 {
     max-width: 100%;
     flex: none;
@@ -1598,39 +1654,6 @@ input[type="email"] {
   .head .col:first-child {
     max-width: 445px;
   }
-/*
-  .head {
-    position: relative;
-    min-height: 160px;
-  }
-*/
-/*
-  .head .row {
-    min-width: 650px;
-  }
-  .head .col:first-child {
-    max-width: 530px;
-    padding-left: 10px;
-  }
-  .head .col:nth-child(2) {
-    max-width: 755px;
-    position: absolute;
-    top: 72px;
-    left: 5px;
-  }
-  .head .form-search {
-    width: 90%;
-  }
-  .form-search input[type="search"] {
-    width: 90%;
-  }
-  .head .col:nth-child(3) {
-    max-width: 160px;
-  }
-  .head .col:last-child {
-    max-width: 75px;
-  }
-*/
   .main-menu .navbar-collapse {
     background-color: #fff;
     z-index: 16;
@@ -1652,30 +1675,27 @@ input[type="email"] {
   .features {
     display: none;
   }
-/*
-  .actual .actual-cards .card-item:nth-child(-2n+3) {
-    display: none;
+  .feature-card .row {
+    justify-content: center;
   }
-*/
-/*
-  .video-review .actual-cards .card-item:nth-child(even) {
-    display: none;
-  }
-*/
   .feature-card .col-3 {
 /*    flex: 0 0 50%;*/
     max-width: 50%;
 /*    justify-content: space-between;*/
   }
+/*
   .feature-card .col-3:nth-child(odd) {
     margin-left: 90px;
   }
+*/
   .feature-card .col-3:first-child {
     margin-bottom: 30px;
   }
+/*
   .feature-card-item {
     width: 270px;
   }
+*/
   .foto-catalog {
     display: none;
   }
@@ -1859,9 +1879,11 @@ input[type="email"] {
   .header {
     background-position: 70% 50%;
   }
+/*
   .feature-card .col-3:nth-child(2n+1) {
     margin-left: 40px;
   }
+*/
 }
 /*----------------------------------------- 630 -----------------------------------------------*/
 @media only screen and (max-width: 630px) {
@@ -1881,15 +1903,19 @@ input[type="email"] {
     min-height: 200px;
     background-position: 75% 50%;
   }
+/*
   .feature-card .col-3:nth-child(2n+1) {
     margin-left: 10px;
   }
+*/
 }
 /*--------------------------------------- 600 ----------------------------------------*/
 @media only screen and (max-width: 600px) {
+/*
   .feature-card .col-3:nth-child(2n+1) {
     margin-left: 0;
   }
+*/
   .feature-card .col-3 {
     min-width: 50%;
     margin-bottom: 30px;
@@ -1921,9 +1947,11 @@ input[type="email"] {
   .feature-card .col-3 {
     min-width: 55%;
   }
+/*
   .feature-card-item {
     margin-left: 120px;
   }
+*/
   .divider {
     display: none;
   }
@@ -1961,6 +1989,15 @@ input[type="email"] {
   }
   .actual-cards .card-item:nth-child(3n-1) {
     display: none;
+  }
+  .card-item {
+    text-align: center;
+  }
+  .card-item img {
+    float: none;
+  }
+  .card-item .circle {
+    right: 40px;
   }
   .header {
     min-height: 180px;
@@ -2039,15 +2076,20 @@ input[type="email"] {
 }
 /*----------------------------------------- 420 ---------------------------*/
 @media only screen and (max-width: 420px) {
+/*
   .feature-card-item {
     margin-left: 70px;
   }
+*/
   figure::after {
     left: 25px;
     width: 86%;
   }
   .videoreview-item {
     margin-left: 10px;
+  }
+  .header {
+    min-height: 150px;
   }
 }
 /*---------------------------380-------------------------*/
@@ -2107,12 +2149,23 @@ input[type="email"] {
     margin-right: 0;
   }
   .header {
+    background: url("img/banner-small.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 70px;
+    min-height: 300px;
+  }
+/*
+  .header {
     min-height: 145px;
     margin-bottom: 70px;
   }
+*/
+/*
   .feature-card-item {
     margin-left: 40px;
   }
+*/
+  
   figure::after {
     left: 20px;
     width: 91%;
