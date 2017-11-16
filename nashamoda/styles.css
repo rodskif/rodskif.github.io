@@ -1458,9 +1458,11 @@ input[type="email"] {
   }
 }
 /*---------------------------------------------- 1050 ----------------------------*/
+@media only screen and (max-width: 1050px) {
 .main-menu {
     padding-left: 50px;
   }
+}
 /*--------------------------------------------965-------------------------------------*/
 @media only screen and (max-width: 965px) {
   .txt-center {
