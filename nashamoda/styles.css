@@ -1,7 +1,6 @@
 .container {
   max-width: 1170px;
   padding: 0;
-/*  overflow: hidden;*/
 }
 header .container {
   padding: 0 15px;
@@ -16,14 +15,13 @@ html{
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    margin-right: -10px;
 }
 
   body
   {
     width: 100%;
     max-width: 100%;
-/*    overflow: hidden;*/
+    overflow-x: hidden;
   }
 .top-menu {
   height: 40px;
@@ -561,8 +559,8 @@ button[data-toggle="collapse"] {
   position: absolute;
   top: 0;
   right: 0;
-  padding-bottom: 7px;
   width: 280px;
+  padding-bottom: 8px;
 /*  height: 450px;*/
   height: auto;
 }
@@ -602,7 +600,6 @@ button[data-toggle="collapse"] {
     margin-top: 50px;
     margin-left: 20px;
     position: relative;
-
     width: 90px;
     height: 700px;
 */
