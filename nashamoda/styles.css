@@ -561,6 +561,7 @@ button[data-toggle="collapse"] {
   position: absolute;
   top: 0;
   right: 0;
+  padding-bottom: 7px;
   width: 280px;
 /*  height: 450px;*/
   height: auto;
@@ -659,7 +660,7 @@ button[data-toggle="collapse"] {
 }
 
 .jcarousel-control-next {
-    bottom: 25px;
+    bottom: 5px;
 }
 
 .jcarousel-control-prev:hover span,
