@@ -482,6 +482,9 @@ button[data-toggle="collapse"] {
   font-weight: 400;
   line-height: 22px; 
 }
+.view-all a:hover i {
+  text-decoration: underline;
+}
 .actual {
   margin-bottom: 95px;
 }
@@ -559,9 +562,9 @@ button[data-toggle="collapse"] {
   display: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 8px;
   width: 280px;
-  padding-bottom: 8px;
+/*  padding-bottom: 8px;*/
 /*  height: 450px;*/
   height: auto;
 }
@@ -570,7 +573,7 @@ button[data-toggle="collapse"] {
   width: 220px;
   height: 332px;
   top: 0;
-  right: 1px;
+  right: 0;
 }
 .card-galery {
   
@@ -658,7 +661,7 @@ button[data-toggle="collapse"] {
 }
 
 .jcarousel-control-next {
-    bottom: 5px;
+    bottom: 30px;
 }
 
 .jcarousel-control-prev:hover span,
@@ -700,7 +703,6 @@ button[data-toggle="collapse"] {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-/*
 .size span {
   display: inline-block;
   margin-right: 10px;
@@ -711,7 +713,6 @@ button[data-toggle="collapse"] {
 .size .text-bordered {
   outline: 1px solid #ccc;
 }
-*/
 
 .card-item:hover .card-hover-item {
   display: flex;
@@ -721,7 +722,7 @@ button[data-toggle="collapse"] {
 */
   background-color: #fff;
   outline: 1px solid #cdcdcd;
-  outline-offset: -1px;
+  outline-offset: 0;
   cursor: pointer;
 }
 
@@ -984,6 +985,7 @@ input[type="email"] {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .review {
