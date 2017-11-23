@@ -324,7 +324,7 @@ button[data-toggle="collapse"] {
   position: relative;
   top: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 .model-text {
   width: 270px;
@@ -895,11 +895,23 @@ figure::after {
   outline-offset: -30px;
   cursor: pointer;
 }
+/*
 .catalog-img:hover {
   transform: scale(1.1);
   filter: grayscale(0.5);
+}
+*/
+.img1 {
+  width: 580px;
+  height: 500px;
   overflow: hidden;
 }
+.img1 img:hover {
+  transform: scale(1.1);
+  outline: 3px solid #fff;
+  outline-offset: -50px;
+}
+
 .img1, .img4, .img5 {
   margin-right: 10px;
 }
@@ -921,6 +933,7 @@ figure::after {
   line-height: 22px;
   text-transform: uppercase;
   background-position:  0% 100%; 
+  z-index: 99;
 /*   outline: 2px solid red; */
 }
 .block1 {
@@ -1347,7 +1360,8 @@ div.videoreview-item:last-of-type {
 }
 .info {
   width: 240px;
-  margin-right: 66px;
+  margin-right: 56px;
+  padding-left: 10px;
 }
 .main {
   width: 198px;
@@ -1439,6 +1453,7 @@ div.videoreview-item:last-of-type {
   .model-text {
     width: 80%;
     height: 60%;
+    overflow: hidden;
   }
   .model-item:hover .model-text {
     width: 100%;
@@ -1957,7 +1972,7 @@ div.videoreview-item:last-of-type {
   }
   .info {
     width: 240px;
-    margin-right: 65px;
+    margin-right: 55px;
   }
   .main {
     width: 181px;
