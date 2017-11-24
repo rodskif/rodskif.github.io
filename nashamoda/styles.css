@@ -898,6 +898,7 @@ figure::after {
 .catalog-img img {
   outline: 3px solid #fff;
   outline-offset: -30px;
+  transition: transform 0.2s;
 }
 /*------------------------------ one photo ------------*/
 .img1 {
