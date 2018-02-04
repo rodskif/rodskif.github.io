@@ -251,6 +251,7 @@ font-family: 'Roboto', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 70px;
 }
 .big-title::after {
   content:'';
@@ -263,7 +264,7 @@ font-family: 'Roboto', sans-serif;
   margin-left: -30px;
 }
 .about-us {
-  padding: 45px 120px 95px;
+  padding: 0 120px 95px;
   text-align: center;
 }
 .img-block {
@@ -274,6 +275,7 @@ font-family: 'Roboto', sans-serif;
 .img-gradient {
   width: 380px;
   height: 250px;
+  text-decoration: none;
 }
 .img-gradient {
   display: none;
@@ -284,14 +286,14 @@ font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
-.item1 {
+.block-item1 {
   background-image: url(img/about01.jpg);
   /*background-image: linear-gradient(to top, rgba(252, 227, 138, 0.81) 0%, rgba(243, 129, 129, 0.81) 100%);*/
 }
-.item2 {
+.block-item2 {
   background-image: url(img/about02.jpg);
 }
-.item3 {
+.blockitem3 {
   background-image: url(img/about03.jpg);
 }
 .img-block-item:hover {
@@ -329,6 +331,84 @@ font-family: 'Roboto', sans-serif;
 .services-item {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 120px);
+  grid-template-rows: repeat(2, 165px);
   margin-top: 65px;
+}
+.service-item {
+   /*border-bottom: 1px solid #e5e5e5;*/
+}
+.services {
+  padding-bottom: 50px;
+}
+.service-caption {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 40px;
+  padding-left: 40px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.service-text {
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.service1 {
+  background: url(img/alarm.svg) no-repeat left 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.service2 {
+  background: url(img/graph.svg) no-repeat left 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.service3 {
+  background: url(img/Computer.svg) no-repeat left 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.service4 {
+  background: url(img/book.svg) no-repeat left 40px;
+}
+.service5 {
+  background: url(img/home.svg) no-repeat left 40px;
+}
+.service6 {
+  background: url(img/image.svg) no-repeat left 40px;
+}
+
+.design {
+  position: relative;
+  background: url(img/design-bg.jpg) no-repeat;
+  width: 100%;
+  min-height: 850px;
+  padding-top: 110px;
+}
+.opacity-cover {
+  width: 100%;
+  height: 960px;
+  position: absolute;
+  top: 0px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.design-items {
+  position: relative;
+  text-align: center;
+}
+.design-items .tablet {
+  position: absolute;
+  top: 65px;
+  left: 25%;
+}
+.design-items .phone {
+  position: absolute;
+  top: 295px;
+  left: 62%;
 }
